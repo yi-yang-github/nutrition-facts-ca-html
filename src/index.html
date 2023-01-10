@@ -2,12 +2,54 @@
     <head>
         <!-- include styles.css -->
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.labelsEN = {
+                "title": "Nutrition Facts",
+                "servingSize": "Serving Size: 1 teaspoon (4g)",
+                "servingsPerContainer": "35 Servings Per Container",
+                "calories": "Calories",
+                "caloriesFromFat": "Calories from Fat",
+                "totalFat": "Total Fat",
+                "saturatedFat": "Saturated Fat",
+
+            };
+            window.labelsFR = {
+                "title": "Facts nutritionnels",
+                "servingSize": "Portion : 1 cuillère à thé (4g)",
+                "servingsPerContainer": "35 Portions par conteneur",
+                "calories": "Calories",
+                "caloriesFromFat": "Calories provenant des graisses",
+                "totalFat": "Graisses totales",
+                "saturatedFat": "Graisses saturées",
+            };
+
+            window.facts = {
+                "calories": "200",
+                "caloriesFromFat": "130",
+                "totalFat": "14g",
+                "saturatedFat": "9g",
+                "transFat": "0g",
+                "cholesterol": "55mg",
+                "sodium": "40mg",
+                "totalCarbohydrate": "17g",
+                "dietaryFiber": "1g",
+                "sugars": "14g",
+                "protein": "3g",
+                "vitaminA": "10%",
+                "vitaminC": "0%",
+                "calcium": "10%",
+                "iron": "6%"
+            };
+        </script>
     </head>
     <body>
         <section class="performance-facts">
           <header class="performance-facts__header">
-            <h1 class="performance-facts__title">Nutrition Facts</h1>
-            <p>Serving Size 1/2 cup (about 82g)
+            <h1 class="performance-facts__title">
+                <script>document.write(window.labelsEN.title + " / " + window.labelsFR.title)</script>
+            </h1>
+            <p>
+                <script>document.write(window.labelsEN.servingSize + " / " + window.labelsFR.servingSize)</script>
               <p>Serving Per Container 8</p>
           </header>
           <table class="performance-facts__table">
