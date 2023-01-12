@@ -19,13 +19,22 @@ p {
 }
 
 .performance-facts {
-  border: 1px solid black;
-  margin: 20px;
-  float: left;
-  /* with both English and French it can get pretty wide */
-  width: 200px;
-  padding: 0.5rem;
+    float: left;
+    width: 200px;
 }
+.performance-facts .container{
+  border: 1px solid black;
+  margin: 20px 20px 0px 20px;
+  padding: 0.5rem;
+  width: 200px;
+}
+.performance-facts .outside{
+    font-style: italic;
+    margin: 5px 20px 20px 20px;
+    padding: 0;
+    width: 220px;
+}
+
 .performance-facts table {
   border-collapse: collapse;
   /* normalize */

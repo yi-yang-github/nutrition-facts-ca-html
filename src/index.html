@@ -23,7 +23,9 @@
                 "vitaminA": "Vitamin A",
                 "vitaminC": "Vitamin C",
                 "calcium": "Calcium",
-                "iron": "Iron"
+                "iron": "Iron",
+                "ingredients": "Ingredients",
+                "ingredientsDetails": "Green tea. Contains caffeine."
             };
             window.labelsFR = {
                 "title": "Valeurs nutritives",
@@ -45,7 +47,9 @@
                 "vitaminA": "Vitamine A",
                 "vitaminC": "Vitamine C",
                 "calcium": "Calcium",
-                "iron": "Fer"
+                "iron": "Fer",
+                "ingredients": "Ingrédients",
+                "ingredientsDetails": "Thé vert. Contient de la caféine.",
             };
 
             window.amount = {
@@ -86,6 +90,7 @@
     </head>
     <body>
         <section class="performance-facts">
+        <div class="container">
           <header class="performance-facts__header">
             <h1 class="performance-facts__title">
                 <script>document.write(window.labelsEN.title + "<br/>" + window.labelsFR.title)</script>
@@ -262,7 +267,14 @@
         <p class="small-info">
             <script>document.write(window.labelsEN.percentDailyValueNotes + "<br/>" + window.labelsFR.percentDailyValueNotes)</script>
         </p>
-        
+    </div>
+        <!-- ingredients, outside of the table -->
+        <p class="small-info outside">
+            <script>document.write(window.labelsEN.ingredients + ": " + window.labelsEN.ingredientsDetails)</script>
+            <br/>
+            <script>document.write(window.labelsFR.ingredients + ": " + window.labelsFR.ingredientsDetails)</script>
+        </p>
         </section>
+
     </body>
 </html>
